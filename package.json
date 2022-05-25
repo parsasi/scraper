@@ -1,0 +1,24 @@
+{
+  "name": "scraper",
+  "version": "0.0.1",
+  "description": "Boilerplate for scraping with Playwright",
+  "main": "dist/index.js",
+  "author": "Parsa Safavi",
+  "license": "MIT",
+  "scripts": {
+    "start": "tsc && node build/index.js",
+    "node": "node",
+    "try" : "sh -c 'yarn run node dist/${0}'",
+    "build": "tsc",
+    "dev": "tsc-watch"
+  },
+  "dependencies": {
+    "playwright": "^1.22.1",
+    "tsc": "^2.0.4",
+    "typescript": "^4.7.2    "
+  },
+  "devDependencies": {
+    "@types/node": "16.14.0",
+    "tsc-watch": "^5.0.3"
+  }
+}
