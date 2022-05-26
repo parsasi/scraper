@@ -1,14 +1,10 @@
 const playwright = require('playwright');
-async function main() {
-    const browser = await playwright.chromium.launch({
-        headless: false // setting this to true will not run the UI
-    });
-    
-    const page = await browser.newPage();
-    await page.goto('https://finance.yahoo.com/world-indices');
-    await page.waitForTimeout(5000); // wait for 5 seconds
-    await browser.close();
+import {Scraper} from './interfaces/scraper.interface';
+import type {ScraperOptions} from './interfaces/scraper-options.interface';
+export default async(scraper : Scraper , options ?: ScraperOptions) => {
+    const getBrowser = async () => await playwright.chromium.launch(options  ?? {});
+    scraper(getBrowser);
 }
 
-main();
+
 
