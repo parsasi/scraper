@@ -1,3 +1,3 @@
-export interface ScraperOptions{
-    headless ?: boolean;
+export interface ScraperOptions {
+    headless?: boolean;
 }

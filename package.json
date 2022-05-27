@@ -8,7 +8,7 @@
   "scripts": {
     "start": "tsc && node build/index.js",
     "node": "node",
-    "try" : "sh -c 'yarn run node dist/${0}'",
+    "try": "sh -c 'yarn run node dist/${0}'",
     "build": "tsc",
     "dev": "tsc-watch"
   },
@@ -19,6 +19,11 @@
   },
   "devDependencies": {
     "@types/node": "16.14.0",
-    "tsc-watch": "^5.0.3"
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
+    "eslint": "^8.16.0",
+    "prettier": "2.6.2",
+    "tsc-watch": "^5.0.3",
+    "eslint-config-prettier": "^8.5.0"
   }
 }

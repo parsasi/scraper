@@ -4,7 +4,11 @@
         "target": "es2015",
         "declaration": true,
         "outDir": "./dist",
-        "lib": ["es5", "es6", "dom"],
+        "lib": [
+            "es5",
+            "es6",
+            "dom"
+        ],
         "sourceMap": true /* Generates corresponding '.map' file. */,
         "allowJs": true,
         "resolveJsonModule": true,
